@@ -1,0 +1,16 @@
+{
+  "name": "osx-ble",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js localhost",
+    "test": "node index.js raspberrypi.local"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-8",
+    "hyperion-client": "^1.0.3"
+  }
+}
