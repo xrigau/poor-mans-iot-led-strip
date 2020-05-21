@@ -1,0 +1,14 @@
+[Unit]
+Description=poor-mans-iot-led-strip - A cheap way of creating a DIY remote-controlled LED strip
+Documentation=https://github.com/xrigau/poor-mans-iot-led-strip
+After=hyperion.service
+
+[Service]
+Environment=HYPERION_ADDRESS=localhost
+Environment=HYPERION_PORT=19444
+Type=simple
+ExecStart=/usr/bin/node /home/pi/dev/poor-mans-iot-led-strip/remote-receiver/index.js ${HYPERION_ADDRESS} ${HYPERION_PORT}
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

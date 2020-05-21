@@ -8,8 +8,8 @@ I present you the Poor man's IoT LED strip. Use it as an ambient light or whatev
 
 This is a quick and dirty implementation of a remote-controlled LED strip, using:
  * Puck.js as a BLE button to toggle between LED effects (other Espruino devices may also work).
- * Raspberry Pi Zero W as the receiver of the commands. The RPi runs the hyperion (ambilight software) to control the LED strip.
- * WS2801 LED strip connected to the Rpi Zero W to display the effects.
+ * Raspberry Pi Zero W as the receiver of the commands (other Raspberry Pi models with BLE capabilities may also work). The RPi runs the hyperion (ambilight software) to control the LED strip.
+ * WS2801 LED strip connected to the Rpi Zero W to display the effects (any LEDs supported by hyperion will work).
 
 ## Communication
 

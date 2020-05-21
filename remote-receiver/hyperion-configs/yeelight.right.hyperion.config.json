@@ -1,0 +1,45 @@
+// Yeelight lightbulb 1 (right)
+// https://hyperion-project.org/threads/xiaomi-rgb-bulb-simple-udp-server-solution.529/#post-7979
+
+{
+	// DEVICE CONFIGURATION 
+	"device" :
+	{
+		"name"       : "yeelight-right",
+		"type"       : "udp",
+        "output"     : "127.0.0.1:20460",
+        "protocol" : 0,
+		"rate"     : 1000000,
+		"colorOrder" : "rgb"
+	},
+
+	// JSON SERVER CONFIG
+	"jsonServer" : 
+	{
+		"port" : 19464
+	},
+
+	// PROTO SERVER CONFIG
+	"protoServer" : 
+	{
+		"port" : 19465
+	},
+
+	// NO FRAME GRABBER CONFIG
+	// NO BLACKBORDER CONFIG
+	// NO KODI CHECK CONFIG
+	// NO BOBLIGHT SERVER CONFIG
+	// NO JSON/PROTO FORWARD CONFIG
+
+	// LED CONFIGURATION
+	"leds" : 
+	[
+		{
+			"index" : 117,
+			"hscan" : { "minimum" : 0.0000, "maximum" : 0.1000 },
+			"vscan" : { "minimum" : 0.0000, "maximum" : 1.0000 }
+		}
+	],
+
+	"endOfJson" : "endOfJson"
+}
